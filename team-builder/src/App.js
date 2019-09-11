@@ -4,7 +4,17 @@ import Create from './Create'
 import Team from './Team'
 
 function App() {
-  const [team, setTeam] = useState([{name: 'Rose', email: 'r.landroche@gmail.com', role: 'Full Stack Web Developer'},{name: 'Joe', email: 'joe@gmail.com', role:'Developer'}]);
+  const [team, setTeam] = useState([
+    {
+    // name: 'Rose', 
+    // email: 'r.landroche@gmail.com', 
+    // role: 'Full Stack Web Developer'
+    // },
+    // {
+    // name: 'Joe', 
+    // email: 'joe@gmail.com', 
+    // role:'Developer'
+  }]);
 
   return (
     <div className="App">
