@@ -17,7 +17,7 @@ function Create(props) {
         if (!newMember.name || !newMember.email || !newMember.role) {
             alert('Incomplete Information. Please fill out all fields.')
         } else {
-            props.setTeam([newMember, ...props.team])
+            props.setTeam([newMember, ...props.team]);
             resetForm();
         }
     };
@@ -29,9 +29,9 @@ function Create(props) {
     return <div>
         <form onSubmit={handleSubmit}>
             <label>Add Team Member</label> <br />
-            <input type="text" name="name" value={props.team.name} placeholder="Name" onChange={handleChange}/> <br />
-            <input type="text" name="email" value={props.team.email} placeholder="Email Address" onChange={handleChange}/> <br />
-            <input type="text" name="role" value={props.team.role} placeholder="Role" onChange={handleChange}/> <br />
+            <input type="text" name="name" value={newMember.name} placeholder="Name" onChange={handleChange}/> <br />
+            <input type="text" name="email" value={newMember.email} placeholder="Email Address" onChange={handleChange}/> <br />
+            <input type="text" name="role" value={newMember.role} placeholder="Role" onChange={handleChange}/> <br />
 
             <button type="submit">Submit</button>
             <button type="button" onClick={resetForm}>Reset</button>

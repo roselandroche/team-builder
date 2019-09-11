@@ -4,16 +4,15 @@ import Create from './Create'
 import Team from './Team'
 
 function App() {
-  const [team, setTeam] = useState([
+  const [team, setTeam] = useState([{
+    name: 'Rose', 
+    email: 'r.landroche@gmail.com', 
+    role: 'Full Stack Web Developer'
+    },
     {
-    // name: 'Rose', 
-    // email: 'r.landroche@gmail.com', 
-    // role: 'Full Stack Web Developer'
-    // },
-    // {
-    // name: 'Joe', 
-    // email: 'joe@gmail.com', 
-    // role:'Developer'
+    name: 'Joe', 
+    email: 'joe@gmail.com', 
+    role:'Developer'
   }]);
 
   return (
